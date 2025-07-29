@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/msmasumbillah00/daily-shop-server/issues"
   },
-  "homepage": "https://github.com/msmasumbillah00/daily-shop-server#readme"
+  "homepage": "https://github.com/msmasumbillah00/daily-shop-server#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.16.5"
+  }
 }
