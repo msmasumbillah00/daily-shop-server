@@ -1,26 +1,20 @@
 {
-  "name": "daily-shop-server",
+  "name": "dailyshop",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/msmasumbillah00/daily-shop-server.git"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/msmasumbillah00/daily-shop-server/issues"
-  },
-  "homepage": "https://github.com/msmasumbillah00/daily-shop-server#readme",
+  "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
-    "mongoose": "^8.16.5"
+    "mongoose": "^8.16.5",
+    "nodemon": "^3.1.10",
+    "sqlite3": "^5.1.7"
   }
 }
