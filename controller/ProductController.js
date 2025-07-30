@@ -29,7 +29,22 @@ const addNewProducts = async (req, res, next) => {
     res.status(500).send("Error adding product.");
   }
 };
+const updateProducts = async (req, res, next) => {
+  try {
+    const upadte = await Product.findByIdAndUpdate(
+      req.params.productId,
+      req.body,
+      {
+        new: true,
+      }
+    );
+    res.json(upadte);
+  } catch (error) {
+    console.log(error);
+  }
+};
 module.exports = {
   getAllProcucts,
   addNewProducts,
+  updateProducts,
 };

@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const {
   getAllProcucts,
   addNewProducts,
+  updateProducts,
 } = require("./controller/ProductController");
 
 const app = express();
@@ -26,6 +27,8 @@ connectDB(
 
 app.get("/products", getAllProcucts);
 app.post("/products/add", addNewProducts);
+app.patch("/products/update/:productId", updateProducts);
+
 app.get("/", (req, res) => {
   res.json({ name: "MD MAsum Billah" });
 });
